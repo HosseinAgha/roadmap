@@ -1,10 +1,15 @@
-We want to render a subject tree tag field + form.  
-We have 3 situations:
-  1. **View**: tree tag field value
-  2. **Edit**: add/remove tree tag fields from the previously selected tree
+# Spec
+We want to render a tree tag field and its editor form.  
+We have 3 situations (check the screenshot):
+  1. **View**: tree tag field value  
+     ![](./assets/TreeTagView.png)
+  2. **Edit**: add/remove tree tag fields from the previously selected tree  
   3. **Create**: a new tree tag field (when we want to create an item)  
-     In create mode our editor will have 2 parts: `TreeSelector` which selects a subject tree and `TagEditor` which selects a branch from that subject tree.
+     In create mode our editor will have 2 parts: `TreeSelector` which selects a subject tree and `TagEditor` which selects a branch from that subject tree.  
+     ![](./assets/TreeTagCreate1.png)  
+     ![](./assets/TreeTagForm.png)  
 
+# Code
 
 ```tsx
 interface TreeTagItem {
@@ -129,3 +134,5 @@ export const TreeTag = ({
   );
 };
 ```
+
+`5 anti-patterns`

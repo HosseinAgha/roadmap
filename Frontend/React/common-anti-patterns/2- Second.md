@@ -1,5 +1,7 @@
-We want to highlight a field's Wrapper borders in the form if it had errors.  
+# Spec
+We want to highlight a field Wrapper Component's borders in the form if it had errors.  
 
+# Code
 ```tsx
 // file: TreeTag.tsx
 
@@ -68,3 +70,5 @@ export const ValidationWithoutWrapper = <
   );
 };
 ```
+
+> `3 anti-patterns`
