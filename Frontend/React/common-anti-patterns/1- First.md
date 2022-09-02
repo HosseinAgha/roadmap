@@ -22,6 +22,7 @@ export const TreeTag = ({
   fieldInfo,
   value, // the value of the field
   readonly,
+  onChange,
 }) => {
   const [treeId, setTreeId] = useState<string>();
   const tags: TreeTagItem[] = getTags(value, fieldInfo);
